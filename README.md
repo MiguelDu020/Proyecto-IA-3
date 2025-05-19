@@ -74,7 +74,7 @@ Appointment: {(True,): 0.4, (False,): 0.9}
 
 ## Ejemplo de Consulta 
 
-**¿Cuál es la probabilidad de fallar a la reunión cuando el tren está retrasado en un día sin mantenimiento y lluvia ligera?¿Cuál es la probabilidad de fallar a la reunión cuando el tren está retrasado en un día sin mantenimiento y lluvia ligera?**
+**¿Cuál es la probabilidad de fallar a la reunión cuando el tren está retrasado en un día sin mantenimiento y lluvia ligera? **
 
 ### Entrada esperada en consola:
 
