@@ -19,7 +19,7 @@ motor_inferencia/
 
 ---
 
-## ⚙️ Funcionamiento General del Sistema
+## Funcionamiento General del Sistema
 
 1. **Carga la red bayesiana** desde archivos de texto:
    - `estructura.txt`: especifica la dirección de las dependencias entre variables (nodos).
@@ -129,7 +129,7 @@ Este archivo es el punto de entrada del programa. Aquí se realiza lo siguiente:
 
 Contiene dos clases fundamentales:
 
-#### 🔹 `NodoBayesiano`
+#### `NodoBayesiano`
 - Representa un nodo en la red (una variable).
 - Almacena:
   - Su nombre.
@@ -137,7 +137,7 @@ Contiene dos clases fundamentales:
   - Lista de hijos.
   - Su tabla de probabilidad condicional (`tabla_probabilidad`).
 
-#### 🔹 `RedBayesiana`
+#### `RedBayesiana`
 - Gestiona todos los nodos y sus relaciones.
 - Métodos principales:
   - `cargar_estructura(archivo)`: lee el archivo de relaciones (estructura de la red).
@@ -153,7 +153,7 @@ Contiene dos clases fundamentales:
 
 Contiene la clase principal del motor de inferencia:
 
-#### 🔹 `MotorInferencia`
+#### `MotorInferencia`
 - Realiza inferencia probabilística por enumeración.
 - Métodos principales:
   - `inferencia_por_enumeracion(query_var, evidencia)`: devuelve la distribución de probabilidades de la variable consultada.
