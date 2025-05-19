@@ -38,12 +38,29 @@ class RedBayesiana:
                     partes[1])
 
     def mostrar_red(self):
+        print("\n=== ESTRUCTURA DE LA RED BAYESIANA ===")
+        print("Formato: Nodo → [Lista de padres]\n")
         for nombre, nodo in self.nodos.items():
             padres = [p.nombre for p in nodo.padres]
-            print(f"Nodo {nombre} tiene como padres: {padres}")
+            padres_str = "ninguno" if not padres else ", ".join(padres)
+            print(f"• {nombre:<15} → [{padres_str}]")
+        print("\n" + "="*35 + "\n")
 
     def mostrar_tablas(self):
+        print("\n=== TABLAS DE PROBABILIDAD ===")
         for nombre, nodo in self.nodos.items():
-            print(
-                f"Tabla de probabilidad de {nombre}: {nodo.tabla_probabilidad}"
-            )
+            print(f"\n► Tabla para: {nombre}")
+            print("─" * 40)
+            if not nodo.tabla_probabilidad:
+                print("  [Tabla vacía]")
+            else:
+                for condicion, prob in nodo.tabla_probabilidad.items():
+                    if condicion == ():
+                        # Si no hay condición, muestra tanto True como False
+                        print(f"  P({nombre} = True) = {prob:.3f}")
+                        print(f"  P({nombre} = False) = {1-prob:.3f}")
+                    else:
+                        # Si hay condición, muestra solo la probabilidad dada
+                        print(f"  P({nombre} = True | dados {condicion}) = {prob:.3f}")
+            print("─" * 40)
+        print("")
