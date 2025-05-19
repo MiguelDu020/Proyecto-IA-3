@@ -1,0 +1,6 @@
+Estres: {(): 0.4}
+Descanso: {(True,): 0.3, (False,): 0.8}
+Concentracion: {(True, True): 0.8, (True, False): 0.4, (False, True): 0.5, (False, False): 0.2}
+Energia: {(True,): 0.7, (False,): 0.3}
+Estudio: {(True, True): 0.9, (True, False): 0.6, (False, True): 0.4, (False, False): 0.1}
+Calificacion: {(True, True): 0.9, (True, False): 0.5, (False, True): 0.6, (False, False): 0.2}

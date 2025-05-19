@@ -1,0 +1,9 @@
+DiaFestivo: {(): 0.2}
+FinDeSemana: {(): 0.285}
+Invitados: {(True, True): 0.9, (True, False): 0.6, (False, True): 0.7, (False, False): 0.3}
+Presupuesto: {(True, True): 0.8, (True, False): 0.4, (False, True): 0.6, (False, False): 0.3}
+Ingredientes: {(True,): 0.9, (False,): 0.4}
+TiempoDisponible: {(): 0.5}
+Preparacion: {(True, True): 0.95, (True, False): 0.6, (False, True): 0.7, (False, False): 0.2}
+Experiencia: {(): 0.4}
+ExitoCena: {(True, True, True): 0.95, (True, True, False): 0.8, (True, False, True): 0.7, (True, False, False): 0.4, (False, True, True): 0.6, (False, True, False): 0.3, (False, False, True): 0.2, (False, False, False): 0.1}

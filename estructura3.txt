@@ -1,0 +1,8 @@
+Estres -> Descanso
+Estres -> Concentracion
+Descanso -> Concentracion
+Concentracion -> Calificacion
+Descanso -> Energia
+Energia -> Estudio
+Estudio -> Calificacion
+Concentracion -> Estudio

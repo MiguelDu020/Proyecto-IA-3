@@ -1,0 +1,10 @@
+DiaFestivo -> Invitados
+FinDeSemana -> Invitados
+Invitados -> Presupuesto
+Presupuesto -> Ingredientes
+Ingredientes -> ExitoCena
+TiempoDisponible -> Preparacion
+Preparacion -> ExitoCena
+Experiencia -> Preparacion
+Experiencia -> ExitoCena
+DiaFestivo -> Presupuesto
