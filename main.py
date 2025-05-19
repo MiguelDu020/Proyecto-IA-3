@@ -4,8 +4,8 @@ from motor_inferencia import MotorInferencia
 def main():
     print("=== CARGANDO RED BAYESIANA ===")
     red = RedBayesiana()
-    red.cargar_estructura("estructura.txt")
-    red.cargar_tablas_probabilidad("tablas.txt")
+    red.cargar_estructura("estructura4.txt")
+    red.cargar_tablas_probabilidad("tablas4.txt")
 
     print("\n=== ESTRUCTURA DE LA RED ===")
     red.mostrar_red()

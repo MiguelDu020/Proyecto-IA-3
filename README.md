@@ -1,4 +1,3 @@
-
 # Proyecto de Inferencia por Enumeración con Redes Bayesianas
 
 Este proyecto implementa un sistema de inferencia probabilística utilizando **Redes Bayesianas**. Permite modelar relaciones causales entre variables mediante una estructura de nodos y probabilidades condicionales. El motor realiza inferencias usando el algoritmo de **enumeración completa**, como se vio en clase de Inteligencia Artificial.
@@ -102,8 +101,76 @@ Hay 60% de probabilidad de que llegue a la reunión.
 
 ---
 
+## Ejemplos Adicionales
 
+El proyecto incluye varios ejemplos de redes bayesianas para practicar:
 
+### 1. Red Original (Appointment)
+```bash
+python main.py estructura.txt tablas.txt
+```
+Red que modela la probabilidad de llegar a una cita basada en lluvia, mantenimiento y estado del tren.
+
+### 2. Red Simple (Estado de Ánimo)
+```bash
+python main.py estructura2.txt tablas2.txt
+```
+Red que modela cómo el clima y el ejercicio afectan el estado de ánimo.
+Variables: Clima, Ejercicio, Mood
+
+Ejemplo de consulta:
+```
+Variable a consultar: Mood
+Variable de evidencia (o 'fin'): Clima
+Valor de 'Clima' (True/False): True
+Variable de evidencia (o 'fin'): Ejercicio
+Valor de 'Ejercicio' (True/False): True
+Variable de evidencia (o 'fin'): fin
+```
+
+### 3. Red de Rendimiento Académico
+```bash
+python main.py estructura3.txt tablas3.txt
+```
+Red que modela el rendimiento académico basado en múltiples factores.
+Variables: Estres, Descanso, Concentracion, Calificacion, Energia, Estudio
+
+Ejemplo de consulta:
+```
+Variable a consultar: Calificacion
+Variable de evidencia (o 'fin'): Estres
+Valor de 'Estres' (True/False): True
+Variable de evidencia (o 'fin'): Descanso
+Valor de 'Descanso' (True/False): False
+Variable de evidencia (o 'fin'): Estudio
+Valor de 'Estudio' (True/False): False
+Variable de evidencia (o 'fin'): fin
+```
+
+### 4. Red de Preparación de Cena
+```bash
+python main.py estructura4.txt tablas4.txt
+```
+Red compleja que modela el éxito de una cena familiar.
+Variables: DiaFestivo, FinDeSemana, Invitados, Presupuesto, Ingredientes, TiempoDisponible, Preparacion, Experiencia, ExitoCena
+
+Ejemplo de consulta:
+```
+Variable a consultar: DiaFestivo
+Variable de evidencia (o 'fin'): ExitoCena
+Valor de 'ExitoCena' (True/False): True
+Variable de evidencia (o 'fin'): Experiencia
+Valor de 'Experiencia' (True/False): True
+Variable de evidencia (o 'fin'): TiempoDisponible
+Valor de 'TiempoDisponible' (True/False): True
+Variable de evidencia (o 'fin'): FinDeSemana
+Valor de 'FinDeSemana' (True/False): False
+Variable de evidencia (o 'fin'): Preparacion
+Valor de 'Preparacion' (True/False): False
+Variable de evidencia (o 'fin'): fin
+```
+
+Cada red proporciona un ejemplo diferente de uso del sistema de inferencia por enumeración, con distintos niveles de complejidad y diferentes dominios de aplicación.
 
 ---
 
